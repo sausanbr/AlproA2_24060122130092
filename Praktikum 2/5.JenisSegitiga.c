@@ -1,5 +1,5 @@
 /*
-Nama Program  : BilanganInteger.c
+Nama Program  : CekSegitiga.c
 Deskripsi     : Menampilkan jenis segitiga berdasarkan sisinya
 Nama Pembuat  : Sausan Berliana Arrizqi
 NIM           : 24060122130092
@@ -18,7 +18,7 @@ int  main(void){
     printf("Masukkan sisi 3 segitiga = ");
     scanf("%d",&s3);
     
-    if (s1 > 0 && s2 > 0 && s3 > 0){
+    if (s1+s2 > s3 || s1+s3 > s2 || s2+s3 > s1){
         if (s1 == s2 == s3){
             printf("Segitiga Sama Sisi");
         } else if (s1 == s2 || s1 == s3 || s2 == s3){
